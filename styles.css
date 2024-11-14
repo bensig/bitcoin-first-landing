@@ -1,0 +1,302 @@
+:root {
+    --bg-color: #122647;
+    --text-color: #ffffff;
+    --highlight-color: #FF5E05;
+    --font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+
+h1, h2, h3, .btn, .date-badge {
+    font-family: var(--font-family);
+}
+
+.display-4 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.lead {
+    font-weight: 400;
+    letter-spacing: -0.01em;
+}
+
+.card-title {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.tag {
+    font-family: var(--font-family);
+    font-weight: 500;
+}
+
+.btn {
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card.past {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.card-body {
+    color: var(--text-color);
+}
+
+.date-badge {
+    color: var(--highlight-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.card-title {
+    color: var(--highlight-color);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn-primary {
+    background-color: var(--highlight-color);
+    border-color: var(--highlight-color);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: rgba(255, 94, 5, 0.8) !important;
+    border-color: var(--highlight-color) !important;
+    box-shadow: none !important;
+}
+
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+    background-color: rgba(255, 94, 5, 0.8) !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.twitter-link {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+.twitter-link:hover {
+    color: #e65504;
+    text-decoration: underline;
+}
+
+/* Bootstrap overrides */
+.display-4 {
+    color: var(--text-color);
+}
+
+h2 {
+    color: var(--text-color);
+}
+
+.recorded-episodes {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 3rem;
+    margin-top: 3rem;
+}
+
+/* Add these new styles for tags and filters */
+.tag {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 0.4rem;
+}
+
+.tag-filter {
+    padding: 1rem 0;
+}
+
+.filter-label {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+.tag-buttons {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.tag-btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tag-btn:hover {
+    background-color: rgba(255, 94, 5, 0.2);
+    color: var(--highlight-color);
+}
+
+.tag-btn.active {
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+}
+
+/* Add these new styles */
+.filter-section {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.selected-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    min-height: 32px;
+}
+
+.selected-tag {
+    background: var(--highlight-color);
+    color: var(--text-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.selected-tag .remove {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.selected-tag .remove:hover {
+    opacity: 1;
+}
+
+.tag-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.filter-toggle {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.filter-toggle:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.tag-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    z-index: 1000;
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tag-menu.show {
+    display: block;
+}
+
+.tag-option {
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.tag-option:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.tag-option.selected {
+    color: var(--highlight-color);
+}
+
+/* Add these new styles */
+.filter-tags {
+    margin: 2rem 0;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.filter-tag {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.filter-tag:hover {
+    background: rgba(255, 94, 5, 0.2);
+    color: var(--highlight-color);
+}
+
+.filter-tag.active {
+    background: var(--highlight-color);
+    color: var(--text-color);
+}
+
+/* Remove default Bootstrap focus styles */
+.btn:focus {
+    box-shadow: none !important;
+}
