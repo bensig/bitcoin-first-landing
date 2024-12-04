@@ -56,14 +56,21 @@
 
         <main class="container py-4">
             <section class="upcoming-episodes mb-5">
-                <h2 class="text-center mb-4">Upcoming Conversations</h2>
+                <h2 class="text-center mb-4">Upcoming</h2>
+                <div class="row g-4">
+                    <!-- JavaScript will populate this -->
+                </div>
+            </section>
+
+            <section class="featured-episodes mb-5">
+                <h2 class="text-center mb-4">Featured</h2>
                 <div class="row g-4">
                     <!-- JavaScript will populate this -->
                 </div>
             </section>
 
             <section class="recorded-episodes">
-                <h2 class="text-center mb-4">Recent Conversations</h2>
+                <h2 class="text-center mb-4">Recent</h2>
                 <div class="row g-4">
                     <!-- JavaScript will populate this -->
                 </div>
@@ -141,7 +148,7 @@
                     <i class="fas fa-bell me-2"></i>Set Reminder</a>`;
 
             return `
-                <div class="col-md-6 col-lg-${isPast ? '4' : '3'}">
+                <div class="col-md-6 col-lg-4">
                     <div class="card h-100 ${isPast ? 'past' : ''}">
                         <div class="card-body">
                             <div class="date-badge mb-2">${formattedDate}</div>
@@ -158,19 +165,20 @@
         }
 
         function updateEpisodes() {
-            const today = new Date();
-            today.setHours(0, 0, 0, 0);
+            const now = new Date();
 
-            // If no active tag, use all episodes
             let filteredEpisodes = activeTag 
                 ? episodes.filter(ep => ep.tags.includes(activeTag))
                 : episodes;
 
-            const upcoming = filteredEpisodes.filter(ep => new Date(ep.date) >= today);
-            const past = filteredEpisodes.filter(ep => new Date(ep.date) < today);
+            // Split episodes into upcoming, featured, and past
+            const upcoming = filteredEpisodes.filter(ep => new Date(ep.date) > now);
+            const featured = filteredEpisodes.filter(ep => ep.featured);
+            const past = filteredEpisodes.filter(ep => !ep.featured && new Date(ep.date) <= now);
 
             // Update DOM with filtered episodes
             const upcomingContainer = document.querySelector('.upcoming-episodes .row');
+            const featuredContainer = document.querySelector('.featured-episodes .row');
             const pastContainer = document.querySelector('.recorded-episodes .row');
 
             if (upcoming.length === 0) {
@@ -178,6 +186,13 @@
             } else {
                 document.querySelector('.upcoming-episodes').style.display = 'block';
                 upcomingContainer.innerHTML = upcoming.map(ep => createEpisodeCard(ep, false)).join('');
+            }
+
+            if (featured.length === 0) {
+                document.querySelector('.featured-episodes').style.display = 'none';
+            } else {
+                document.querySelector('.featured-episodes').style.display = 'block';
+                featuredContainer.innerHTML = featured.map(ep => createEpisodeCard(ep, true)).join('');
             }
 
             pastContainer.innerHTML = past.map(ep => createEpisodeCard(ep, true)).join('');

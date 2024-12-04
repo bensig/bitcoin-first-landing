@@ -1,17 +1,61 @@
 [
     {
-        "date": "2024-11-18T08:00:00-08:00",
-        "speaker": "VJ Boyapati",
-        "title": "Bullish Case for BTC",
-        "tags": ["Macro", "Investing"],
-        "link": "https://x.com/i/spaces/1YqGovLZwlvKv"
+        "date": "2024-12-12T08:00:00-08:00",
+        "speaker": "Peter Dunsworth",
+        "title": "Credit and Collateral",
+        "tags": ["Finance", "Economics"],
+        "link": "https://x.com/bitcoinfirst_"
     },
     {
-        "date": "2024-11-21T08:00:00-08:00",
-        "speaker": "Jason Jones",
-        "title": "Bitcoin for Newbies", 
-        "tags": ["Investing", "Technology"],
-        "link": "https://x.com/i/spaces/1yNGagkRnVrxj"
+        "date": "2024-12-06T08:00:00-08:00",
+        "speaker": "Jeff Park - Bitwise",
+        "title": "Radical Portfolio",
+        "tags": ["Investing", "Markets"],
+        "link": "https://x.com/bitcoinfirst_"
+    },
+    {
+        "date": "2024-12-04T08:00:00-08:00",
+        "speaker": "LastCoinStanding",
+        "title": "ex-Mastercard Exec on Payments",
+        "tags": ["Finance", "Technology"],
+        "link": "https://x.com/i/spaces/1zqKVYaMXaXxB"
+    },
+    {
+        "date": "2024-12-03T08:00:00-08:00",
+        "speaker": "Rob Classen",
+        "title": "Camp One Ventures",
+        "tags": ["Investing", "Finance"],
+        "link": "https://x.com/i/spaces/1yNGagvwwdrxj"
+    },
+    {
+        "date": "2024-11-29T08:00:00-08:00",
+        "speaker": "Steven Perrenod",
+        "title": "Kelly Criterion",
+        "tags": ["Analysis", "Investing"],
+        "link": "https://x.com/i/spaces/1dRJZdOOQwgKB"
+    },
+    {
+        "date": "2024-11-28T08:00:00-08:00",
+        "speaker": "Will Reaves",
+        "title": "Fold and the Future of Finance",
+        "tags": ["Finance", "Technology"],
+        "link": "https://x.com/i/spaces/1BdGYERXdVBGX"
+    },
+    {
+        "date": "2024-11-27T08:00:00-08:00",
+        "speaker": "Sina",
+        "title": "MSTR and Power Law",
+        "tags": ["Analysis", "Investing"],
+        "link": "https://x.com/i/spaces/1YqxovrOlElJv",
+        "featured": true
+    },
+    {
+        "date": "2024-11-26T08:00:00-08:00",
+        "speaker": "Jeff Booth",
+
+        "title": "Bitcoin and Deflation",
+        "tags": ["Macro", "Economics"],
+        "link": "https://x.com/i/spaces/1YqGovLZwlvKv"
     },
     {
         "date": "2024-11-22T08:00:00-08:00",
@@ -21,18 +65,18 @@
         "link": "https://x.com/i/spaces/1djGXrdwYQExZ"
     },
     {
-        "date": "2024-11-26T08:00:00-08:00",
-        "speaker": "Jeff Booth",
-        "title": "Bitcoin and Deflation",
-        "tags": ["Macro", "Economics"],
-        "link": "https://x.com/i/spaces/1YqGovLZwlvKv"
+        "date": "2024-11-21T08:00:00-08:00",
+        "speaker": "Jason Jones",
+        "title": "Bitcoin for Newbies",
+        "tags": ["Investing", "Technology"],
+        "link": "https://x.com/i/spaces/1yNGagkRnVrxj"
     },
     {
-        "date": "2024-11-27T08:00:00-08:00",
-        "speaker": "Will Reaves",
-        "title": "Fold and the Future of Finance",
-        "tags": ["Finance", "Technology"],
-        "link": "https://x.com/i/spaces/1BdGYERXdVBGX"
+        "date": "2024-11-18T08:00:00-08:00",
+        "speaker": "VJ Boyapati",
+        "title": "Bullish Case for BTC",
+        "tags": ["Macro", "Investing"],
+        "link": "https://x.com/i/spaces/1YqGovLZwlvKv"
     },
     {
         "date": "2024-11-12T08:00:00-08:00",
@@ -46,7 +90,8 @@
         "speaker": "Prof St. Onge",
         "title": "Downsizing Gov + Ending the Fed",
         "tags": ["Politics", "Economics"],
-        "link": "https://x.com/bitcoinfirst_/status/1856004606360215805"
+        "link": "https://x.com/bitcoinfirst_/status/1856004606360215805",
+        "featured": true
     },
     {
         "date": "2024-11-06T08:00:00-08:00",
@@ -60,6 +105,7 @@
         "speaker": "Caitlin Long",
         "title": "Banking and Bitcoin",
         "tags": ["Banking", "Regulation"],
-        "link": "https://x.com/dotkrueger/status/1851640611277095108"
+        "link": "https://x.com/dotkrueger/status/1851640611277095108",
+        "featured": true
     }
 ]
